@@ -29,3 +29,7 @@ include_directories(gmock /usr/local/include/gmock/include)
 # Add main executable
 add_executable(CppTutorial src/main.cpp)
 target_link_libraries(CppTutorial gtest gtest_main)
+
+# Add test executable
+add_executable(RunMyTests Tests/test.cpp)
+target_link_libraries(RunMyTests gtest gtest_main)
