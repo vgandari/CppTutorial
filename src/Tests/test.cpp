@@ -5,6 +5,7 @@ using testing::Eq;
 namespace {
 	class ClassDeclaration: public testing::Test {
 		public:
+			// Create object to be tested
 			ClassName obj;
 			ClassDeclaration() {
 				obj;

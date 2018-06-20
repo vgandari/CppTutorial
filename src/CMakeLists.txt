@@ -5,15 +5,8 @@ project(CppTutorial)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -lgtest -lgtest_main")
 
 # Add Google Test
-# find_library(GTEST_LIB gtest)
-# find_package(gtest REQUIRED)
-# include_directories (${gtest_INCLUDE_DIRS})
-# find_library(GMOCK_LIB gmock)
 include_directories(gtest /usr/local/include/gtest/include)
 include_directories(gmock /usr/local/include/gmock/include)
-# add_subdirectory(lib/googletest-master)
-# include_directories(lib/googletest-master/googletest/include)
-# include_directories(lib/googletest-master/googlemock/include)
 
 # include libraries built by this project
 # target_include_directories(name PRIVATE ${INCLUDE_SUBDIRECTORY})
